@@ -18,7 +18,7 @@ namespace clandesitne::core {
 		for (std::size_t i = 1; i < index; i++) { // ...and just return b, which already equals 1
 			std::uint64_t total = a + b; // otherwise, this total will be the total of the previous two indexes
 			// e.g. index 2 = 0 + 1 = 1
-			//
+
 			// ps: we create "total" in the for loop for the same reason 'a' and 'b' are after the IF statement...
 			// ...unless the index >= 2, adding is unnecessary; therefore, the variable "total" is also unnecessary
 

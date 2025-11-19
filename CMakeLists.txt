@@ -8,7 +8,14 @@ set(CMAKE_CXX_STANDARD 20)
 # ————————————————————————
 add_library(clandesitne_toolbox
         # add .cpp files here
+        src/algo.cpp
         src/core.cpp
+        src/crypto.cpp
+        src/linear.cpp
+        src/primes.cpp
+        src/stats.cpp
+        src/tcg.cpp
+        src/util.cpp
 )
 
 # ——————————————————————————————————————————————————————————————————————————

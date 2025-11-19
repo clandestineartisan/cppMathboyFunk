@@ -1,0 +1,8 @@
+//
+// Created by Raphael Barrera on 11/19/25.
+//
+
+#ifndef CPPMATHBOYFUNK_LINEAR_HPP
+#define CPPMATHBOYFUNK_LINEAR_HPP
+
+#endif //CPPMATHBOYFUNK_LINEAR_HPP
