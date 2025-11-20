@@ -11,11 +11,13 @@ namespace clandesitne::core {
 	 *
 	 */
 	int sign(std::int64_t x) {
-
+		if (x > 0) return 1; // if 'x' is greater than 0, then 'x' is positive
+		if (x < 0) return -1; // if 'x' is less than 0, then 'x' is negative
+		return 0; // otherwise, 'x' is equal to zero
 	}
 
 	std::int64_t gcd(std::int64_t a, std::int64_t b) {
-
+		// do i look for prime numbers first?
 	}
 
 	std::int64_t lcm(std::int64_t a, std::int64_t b) {
@@ -37,9 +39,6 @@ namespace clandesitne::core {
 	bool isPalindrome(std::uint64_t n) {
 
 	}
-
-
-
 
 	/* ———————— Factorials & Basic Combinatorics ————————
 	 *
