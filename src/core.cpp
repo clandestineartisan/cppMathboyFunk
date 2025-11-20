@@ -7,14 +7,66 @@
 #include <cstdint>
 
 namespace clandesitne::core {
+	/* ———————— Basic Integer Utilities ————————
+	 *
+	 */
+	int sign(std::int64_t x) {
+
+	}
+
+	std::int64_t gcd(std::int64_t a, std::int64_t b) {
+
+	}
+
+	std::int64_t lcm(std::int64_t a, std::int64_t b) {
+
+	}
+
+	/* ———————— Digit/Number Utilities ————————
+	 *
+	 */
+	std::size_t countDigits(std::uint64_t n) {
+
+	}
+	std::uint64_t reverseDigits(std::uint64_t n) {
+
+	}
+	std::uint64_t digitSum(std::uint64_t n) {
+
+	}
+	bool isPalindrome(std::uint64_t n) {
+
+	}
+
+
+
+
+	/* ———————— Factorials & Basic Combinatorics ————————
+	 *
+	 */
+	std::int64_t factorial(std::int64_t n) {
+
+	}
+
+	std::int64_t permutations(std::int64_t n, std::int64_t r) {
+
+	}
+
+	std::int64_t combinations(std::int64_t n, std::int64_t r) {
+
+	}
+
+	/* ———————— Fibonacci Family ————————
+	 *
+	 */
 	std::uint64_t fibonacci(std::size_t index) {
 		if (index == 0) return 0; // obviously the origin of the sequence is 0
-		// incase the index = 0, in order to avoid declaring unnecessary variables...
+		// in case the index = 0, in order to avoid declaring unnecessary variables...
 		// ...we declare the variables after the IF statement
 		std::uint64_t a = 0;
 		std::uint64_t b = 1;
 
-		// incase the index = 1, we skip the for loop...
+		// in case the index = 1, we skip the for loop...
 		for (std::size_t i = 1; i < index; i++) { // ...and just return b, which already equals 1
 			std::uint64_t total = a + b; // otherwise, this total will be the total of the previous two indexes
 			// e.g. index 2 = 0 + 1 = 1
@@ -35,6 +87,22 @@ namespace clandesitne::core {
 	}
 
 	std::uint64_t fibonacciModuloM(std::size_t index, std::uint64_t modulus) {
+
+	}
+
+	/* ———————— Modular Arithmetic Basics ————————
+	 *
+	 */
+	std::uint64_t modAdd(std::uint64_t a, std::uint64_t b, std::uint64_t mod_m) {
+
+	}
+	std::uint64_t modSub(std::uint64_t a, std::uint64_t b, std::uint64_t mod_m) {
+
+	}
+	std::uint64_t modMul(std::uint64_t a, std::uint64_t b, std::uint64_t mod_m) {
+
+	}
+	std::uint64_t modPow(std::uint64_t base, std::uint64_t exp, std::uint64_t mod_m) {
 
 	}
 }
