@@ -1,12 +1,27 @@
 readME bebee
 
-2025-NOV-16
+# General Updates
+###### 2025-NOV-16
 Created the basic folder structure for headers, sources files, and test files, as well creating the files.
 The CMakeLists.txt file was properly setup to link them all and run the tests. This README was pulled from GitHub prior
 to committing. Lastly, the main.cpp where are the manual testing will be done was renamed to ScrapPaper.cpp LOL Get it?
 :p
 
-Libraries Being Used
+# Core
+## Basic Integer Utilities
+###### int sign(std::int64_t x)
+
+###### std::int64_t gcd(std::int64_t a, std:: int64_t b)
+Greatest Common Divisor
+
+Do I need to look for primes first? No. While prime factorization works, the computation takes way too long once you
+start looking for the Greatest Common Divisor for larger numbers.
+How do I approach a fast method then? Look into remainders.
+
+Using remainders to find the GCD is apparently the **heart** of Euclidean Algorithm.
+I lowkey don't know what this means...
+
+# Libraries Being Used
 <cstdint>
 std::int8_t			like a signed char
 std::int16_t			short

@@ -3,6 +3,8 @@
 //
 #include "clandesitne/core.hpp"
 
+#include <cstdlib>
+#include <cmath>
 #include <cstddef>
 #include <cstdint>
 
@@ -16,9 +18,47 @@ namespace clandesitne::core {
 		return 0; // otherwise, 'x' is equal to zero
 	}
 
+
+
 	std::int64_t gcd(std::int64_t a, std::int64_t b) {
-		// do i look for prime numbers first?
+		// do i look for prime numbers first? no, prime factorization would take too long (heavy process)
+		// instead we'll be using remainders, or modulus, a (mod b)
+
+		// either way, first check if either integer is 0 or 1
+		if (a == 0 || b == 0) { // if either 'a' or 'b' equal 0...
+			return 0; // ...then return 0, to indicate that at least one of the integers is 0.
+		} else if (a == 1 || b == 1) { // but if either 'a' or 'b' equal 1...
+			return 1; // ...then the only common divisor can be 1.
+		} // should neither integer be 0 nor 1, we continue
+
+		// for the execution of the code, only use absolute numbers
+			// will explain why later?
+		if (a < 0) { // if 'a' is a neg # then the following is how we would get the absolute value
+			a = -(a); // -(a) = -(-#) = +#
+		} // but we have a function for the abs value using...
+		b = abs(b); // ...abs(b), #include <cstdlib> to use with integers, #include <cmath> if using with floaters
+		// under the hood -> return ( (b < 0) ? -b : b )
+
+		// enter chunk of code under here for now
+		std::int64_t r = 0; // we're instantiating the remainder ahead of time, in case 'b' is greater than 'a'
+		// first check which value's absolute is greater
+		if (b > a) { // if be is greater, we'll switch around the values to avoid changing the rest of the code
+			r = a; // 'r' stores 'a' temporarily
+			a = b; // 'a' is now 'b' (effectively swapping 'a' w/ 'b')
+			b = r; // and 'b' is now 'a'
+		}
+		r = 0; // this is just to reset the remainder to when we originally declared it... should i tho?
+
+		while (b != 0) { // until the remainder (r) is 0
+			r = a % b; // r = a (mod b) OR equals the remainder after 'a' is divided by 'b'
+			a = b; //
+			b = r; //
+		}
+
+
 	}
+
+
 
 	std::int64_t lcm(std::int64_t a, std::int64_t b) {
 
