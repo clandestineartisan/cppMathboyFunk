@@ -80,9 +80,12 @@ How do I approach a fast method then? Look into remainders.
 
 # Libraries Being Used
 ```cpp
-// Get used to using these integer types.
-#include <cstdint>
-
+#include <cstdint> // C Standard Library Integer
+/* Get used to using these integer types.
+ * Provides standard fixed-width integer types and their limits to provide consistent data sizes across different
+ * platforms.
+ */
+ 
 std::int8_t //like a signed char
 std::int16_t //short
 std::int32_t //int
