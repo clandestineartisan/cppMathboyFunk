@@ -78,8 +78,9 @@ How do I approach a fast method then? Look into remainders.
 > Using remainders to find the GCD is apparently the **heart** of Euclidean Algorithm.  
 > I lowkey don't know what this means...
 
-# Libraries Being Used
-###### C Standard Library Integer
+---
+## Libraries Being Used
+#### C Standard Library Integer
 ```cpp
 #include <cstdint> // 
 /* Get used to using these integer types.
