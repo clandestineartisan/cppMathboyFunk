@@ -57,6 +57,7 @@ Created the basic folder structure for headers, sources files, and test files, a
 The **CMakeLists.txt** file was properly setup to link them all and run the tests. This README was pulled from GitHub prior
 to committing. Lastly, the main.cpp where are the manual testing will be done was renamed to ScrapPaper.cpp LOL Get it?
 :p
+
 ---
 ## Core
 ### Basic Integer Utilities
@@ -64,7 +65,7 @@ to committing. Lastly, the main.cpp where are the manual testing will be done wa
 >```cpp
 >std::int sign(std::int64_t x);
 >```
-> This function will return a 1 if positive or a -1 if negative.
+> If $x$ is a positive(+) number the function will return a 1 or a -1 if negative(-).
 
 >#### Greatest Common Divisor
 >```cpp
