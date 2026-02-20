@@ -82,25 +82,25 @@ I lowkey don't know what this means...
 
 int main() {
 
-std::int8_t like a signed char
-std::int16_t			short
-std::int32_t			int
-std::int64_t			long long
-std::uint8_t			unsigned
+std::int8_t //like a signed char
+std::int16_t //short
+std::int32_t //int
+std::int64_t //long long
+std::uint8_t //unsigned
 
-std::int_fast8_t		at least 'n' bits, but optimized for speed <br>
-std::uint_fast8_t		unsigned <br>
+std::int_fast8_t //at least 'n' bits, but optimized for speed <br>
+std::uint_fast8_t //unsigned <br>
 
-std::int_least8_t	    at least 'n' bits, but smallest memory <br>
-std::uint_least8_t		unsigned
+std::int_least8_t //at least 'n' bits, but smallest memory <br>
+std::uint_least8_t //unsigned
 
-std::intmax_t		max integer size
-std::uintmax_t		unsigned
-    used for situations where you want the largest integer type the platform supports
+std::intmax_t //max integer size
+std::uintmax_t //unsigned
+//used for situations where you want the largest integer type the platform supports
 
-std::intptr_t		integer guaranteed big enough to hold a pointer
-std::uintptr_t		unsigned
-    These matter whenever you’re doing low-level memory, crypto, or serialization work.
+std::intptr_t //integer guaranteed big enough to hold a pointer
+std::uintptr_t //unsigned
+//These matter whenever you’re doing low-level memory, crypto, or serialization work.
 }
 ```
 here we gooo
