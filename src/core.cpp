@@ -54,8 +54,7 @@ namespace clandesitne::core {
 			a = b; //
 			b = r; //
 		}
-
-
+	return b;
 	}
 
 
