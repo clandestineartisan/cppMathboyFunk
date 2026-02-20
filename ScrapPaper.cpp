@@ -10,7 +10,7 @@ std::uint64_t index;
 
 	std::cout << "Return what index in the fibonacci sequence?: ";
 	std::cin >> index;
-	std::cout << fibonacci(index);
+	std::cout << fib(index);
 
 	return 0;
 }
