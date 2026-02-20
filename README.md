@@ -79,8 +79,9 @@ How do I approach a fast method then? Look into remainders.
 > I lowkey don't know what this means...
 
 # Libraries Being Used
+###### C Standard Library Integer
 ```cpp
-#include <cstdint> // C Standard Library Integer
+#include <cstdint> // 
 /* Get used to using these integer types.
  * Provides standard fixed-width integer types and their limits to provide consistent data sizes across different
  * platforms.
